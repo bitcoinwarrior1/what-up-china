@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/what-up-china/static/css/main.dd11ef94.chunk.css",
-    "main.js": "/what-up-china/static/js/main.c49195d2.chunk.js",
-    "main.js.map": "/what-up-china/static/js/main.c49195d2.chunk.js.map",
+    "main.js": "/what-up-china/static/js/main.292ca4e5.chunk.js",
+    "main.js.map": "/what-up-china/static/js/main.292ca4e5.chunk.js.map",
     "runtime-main.js": "/what-up-china/static/js/runtime-main.101bdb06.js",
     "runtime-main.js.map": "/what-up-china/static/js/runtime-main.101bdb06.js.map",
     "static/css/2.10510d9d.chunk.css": "/what-up-china/static/css/2.10510d9d.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.10510d9d.chunk.css",
     "static/js/2.39ab1f86.chunk.js",
     "static/css/main.dd11ef94.chunk.css",
-    "static/js/main.c49195d2.chunk.js"
+    "static/js/main.292ca4e5.chunk.js"
   ]
 }
