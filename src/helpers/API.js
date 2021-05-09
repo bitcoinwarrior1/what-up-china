@@ -4,8 +4,9 @@ class API {
 
     async getTopNews() {
         try {
-            const result = await request.get("https://newsapi.org/v2/top-headlines?country=cn&apiKey=6d7709b0ec234faab6e438466941c2ae");
-            return JSON.parse(result.text).articles;
+            const query = "https://what-up-china-server.herokuapp.com/top-news/";
+            const result = await request.get(query);
+            return JSON.parse(result.text);
         } catch (e) {
             return e;
         }
