@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,QACE,iBACF,CAEA,aACE,cAAc,CACd,eACF,CAEA,SACE,SACF","file":"main.5d932961.chunk.css","sourcesContent":["#titles {\n  text-align: center;\n}\n\n#description {\n  margin-left:5%;\n  margin-right:5%;\n}\n\n#results {\n  margin:5%;\n}\n\n"]}
