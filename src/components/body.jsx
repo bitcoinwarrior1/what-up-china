@@ -10,6 +10,7 @@ class body extends Component {
 
     render() {
        return <div id={"results"}>
+            <h2>Trending News</h2>
             <TrendingNews/>
        </div>;
     }

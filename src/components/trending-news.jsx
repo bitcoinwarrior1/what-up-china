@@ -15,19 +15,13 @@ class trendingNews extends Component {
 
     async componentDidMount() {
         try {
-            let localisedArticles = [];
             const articles = await this.api.getTopNews();
-            for(const article of articles) {
-                // TODO en for now but later read from the users browser
-                localisedArticles.push(await this.api.localiseNewsArticle(article, "en"));
-            }
-            this.setState({ articles: localisedArticles });
+            this.setState({ articles: articles });
         } catch (e) {
             alert(e);
         }
     }
 
-    // TODO use translate on the article title and description
     makeArticleDiv(article) {
         let img = "";
         if(article.urlToImage != null) {
