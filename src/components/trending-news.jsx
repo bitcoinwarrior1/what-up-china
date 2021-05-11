@@ -25,13 +25,13 @@ class trendingNews extends Component {
     makeArticleDiv(article) {
         let img = "";
         if(article.urlToImage != null) {
-            img = <img src={`https:${article.urlToImage}`}/>
+            img = <img src={`https://${article.urlToImage.replace("http://", "").replace("https://", "")}`}/>
         }
         return <div>
             <h2><a href={article.url}>{article.title}</a></h2>
             <p>{article.description}</p>
             {img}
-            <p>{article.publishedAt}</p>
+            <p>{new Date(article.publishedAt).toDateString()}</p>
         </div>
     }
 
