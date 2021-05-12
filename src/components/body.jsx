@@ -11,9 +11,9 @@ class body extends Component {
 
     render() {
        return <div id={"results"}>
-            <h2>Trending News</h2>
+            <h2><a id={"trendingNews"}/>Trending News</h2>
             <TrendingNews/>
-            <h2>Trending on Bilibili</h2>
+            <h2><a id={"trendingBilibili"}/>Trending on Bilibili</h2>
            <TrendingBilibili/>
        </div>;
     }
