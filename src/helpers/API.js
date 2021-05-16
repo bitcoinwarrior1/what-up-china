@@ -22,6 +22,16 @@ class API {
         }
     }
 
+    async getBaiduHotNews() {
+        try {
+            const query = "https://what-up-china-server.herokuapp.com/baidu/hot-news/";
+            const result = await request.get(query);
+            return JSON.parse(result.text);
+        } catch (e) {
+            return e;
+        }
+    }
+
 }
 
 export default API;
