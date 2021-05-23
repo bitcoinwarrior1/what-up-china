@@ -12,7 +12,7 @@
     <title>what-up-china</title>
     <script type="text/javascript">
       function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'zh', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        new google.translate.TranslateElement({pageLanguage: 'zh', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');
       }
     </script>
 
@@ -50,9 +50,9 @@
         <br/><br/>
         <div id="google_translate_element"></div>
         <br>
-        <a href="#trendingBaidu" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Hot News Baidu</a>
-        <a href="#trendingNews" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Trending News</a>
-        <a href="#trendingBilibili" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Trending on Bilibili</a>
+        <a href="#trendingBaidu" id="baiduNewsButton" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Hot News Baidu</a>
+        <a href="#trendingNews" id="trendingNewsButton" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Trending News</a>
+        <a href="#trendingBilibili" id="trendingBilibiliButton" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Trending on Bilibili</a>
       </div>
       <div id="root"></div>
     </div>

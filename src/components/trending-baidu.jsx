@@ -31,6 +31,7 @@ class trendingBaidu extends Component {
 
     render() {
         return (<div>
+            <h3>{this.state.sentiment}</h3>
             {this.state.hotNews.map((article) => { return this.makeNewsDiv(article) })}
         </div>);
     }

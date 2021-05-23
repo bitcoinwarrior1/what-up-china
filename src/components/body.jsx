@@ -3,6 +3,7 @@ import '../App.css';
 import TrendingNews from "./trending-news";
 import TrendingBilibili from "./trending-bilibili";
 import TrendingBaidu from "./trending-baidu";
+import Sentiment from "./sentiment";
 
 class body extends Component {
 
@@ -12,6 +13,7 @@ class body extends Component {
 
     render() {
        return <div id={"results"}>
+            <Sentiment/>
             <h2><a id={"trendingBaidu"}/>Hot News Baidu</h2>
             <TrendingBaidu/>
             <br/><br/>

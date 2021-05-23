@@ -1,6 +1,14 @@
 #titles {
   text-align: center;
 }
+.faces {
+  max-width: 10%;
+  max-height: 10%;
+}
+
+#sentiment {
+  /*text-align: center;*/
+}
 
 #buttonsTab {
   text-align: center;

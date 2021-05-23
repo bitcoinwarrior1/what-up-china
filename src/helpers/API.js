@@ -1,6 +1,17 @@
 import request from 'superagent';
+import natural from 'natural';
+import aposToLexForm from 'apos-to-lex-form';
+import SpellCorrector from 'spelling-corrector';
+import SW from 'stopword';
+const { WordTokenizer } = natural;
+const tokenizer = new WordTokenizer();
+const spellCorrector = new SpellCorrector();
 
 class API {
+
+    constructor() {
+        // spellCorrector.loadDictionary();
+    }
 
     async getTopNews() {
         try {
@@ -30,6 +41,21 @@ class API {
         } catch (e) {
             return e;
         }
+    }
+
+    getTextSentiment(text, lang) {
+        const standardisedText = aposToLexForm(text).toLowerCase().replace(/[^a-zA-Z\s]+/g, '');
+        const tokenizedReview = tokenizer.tokenize(standardisedText);
+        // tokenizedReview.forEach((word, index) => {
+        //     tokenizedReview[index] = spellCorrector.correct(word);
+        // });
+        const filteredReview = SW.removeStopwords(tokenizedReview);
+        const { SentimentAnalyzer, PorterStemmer } = natural;
+        // NB: the original language is in Chinese and is later translated by the user into other languages
+        const language = lang || 'English';
+        const analyzer = new SentimentAnalyzer(language, PorterStemmer, 'afinn');
+
+        return analyzer.getSentiment(filteredReview);
     }
 
 }
