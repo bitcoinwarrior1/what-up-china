@@ -16,7 +16,7 @@ class trendingBilibili extends Component {
     makeTrendDiv(trend) {
         return <div>
             <h2><a href={trend.short_link}>{trend.title}</a></h2>
-            <img src={`https://${trend.pic.replace("http://", "").replace("https://", "")}`}/>
+            {/*<img src={`https://${trend.pic.replace("http://", "").replace("https://", "")}`}/>*/}
             {/*<p>{new Date(trend.pubdate).toDateString()}</p>*/}
         </div>
     }
