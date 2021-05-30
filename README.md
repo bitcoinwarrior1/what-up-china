@@ -6,3 +6,6 @@ The Chinese internet is a black box to everyone who lives outside of China. The 
 
 ## How this website hopes to solve this issue
 This website hopes to make the discovery process for what's trending on the Chinese web super easy by collecting and curating the trends on the Chinese web to a simple webpage, that can be translated by machine to the reader's language.  
+
+## Getting started
+To run this website on localhost: `npm start` which will run on `localhost:3000`
