@@ -13,7 +13,6 @@ class body extends Component {
 
     render() {
        return <div id={"results"}>
-            <Sentiment/>
             <h2><a id={"trendingBaidu"}/>Hot News Baidu</h2>
             <TrendingBaidu/>
             <br/><br/>
@@ -22,6 +21,7 @@ class body extends Component {
             <br/><br/>
             <h2><a id={"trendingBilibili"}/>Trending on Bilibili</h2>
             <TrendingBilibili/>
+            <Sentiment/>
        </div>;
     }
 }

@@ -13,7 +13,6 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
-    "spelling-corrector": "^3.0.0",
     "stopword": "^1.0.7",
     "superagent": "^6.1.0",
     "web-vitals": "^0.2.4"
