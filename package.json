@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^12.1.10",
     "apos-to-lex-form": "^1.0.5",
     "bootstrap": "^3.3.7",
-    "natural": "^5.0.3",
+    "natural": "git+https://github.com/James-Sangalli/natural.git",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
